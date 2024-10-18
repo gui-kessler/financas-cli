@@ -1,7 +1,7 @@
 package cmd
 
 import (
-	"fmt"
+	"financas-cli/actions"
 
 	"github.com/spf13/cobra"
 )
@@ -11,7 +11,7 @@ var updateCmd = &cobra.Command{
 	Short: "Atualiza um registro",
 	Long:  ``,
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("update called")
+		actions.Update()
 	},
 }
 

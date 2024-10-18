@@ -1,7 +1,7 @@
 package cmd
 
 import (
-	"fmt"
+	"financas-cli/actions"
 
 	"github.com/spf13/cobra"
 )
@@ -11,7 +11,7 @@ var queryCmd = &cobra.Command{
 	Short: "Realiza consultas das contas",
 	Long:  ``,
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("query called")
+		actions.Query()
 	},
 }
 
